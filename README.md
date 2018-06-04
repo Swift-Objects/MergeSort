@@ -3,6 +3,7 @@
 
 数组并归排序:
 // 1. 分解
+
     func mergeSort<T: Comparable>(_ array: [T]) -> [T] {
          guard array.count > 1 else { return array }
          let middleIndex = array.count / 2
