@@ -2,6 +2,7 @@
 归并排序
 
 数组并归排序:
+
 // 1. 分解
 
     func mergeSort<T: Comparable>(_ array: [T]) -> [T] {
@@ -10,7 +11,6 @@
          let leftArray = mergeSort(Array(array[0..<middleIndex]))
          let rightArray = mergeSort(Array(array[middleIndex..<array.count]))
          
-         // here
          return merge(leftArray, rightArray)
     }
     
