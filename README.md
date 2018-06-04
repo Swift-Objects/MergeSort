@@ -4,7 +4,7 @@
 数组并归排序:
 
 // 1. 分解
-
+// 数组排序, 可以排列所有可以被排序的数据:字符, 字符串, Int 等
     func mergeSort<T: Comparable>(_ array: [T]) -> [T] {
          guard array.count > 1 else { return array }
          let middleIndex = array.count / 2
